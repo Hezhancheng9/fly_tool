@@ -1,0 +1,13 @@
+--cpu Cortex-M3
+"..\..\output\startup_stm32f10x_hd.o"
+"..\..\output\core_cm3.o"
+"..\..\output\system_stm32f10x.o"
+"..\..\output\misc.o"
+"..\..\output\stm32f10x_gpio.o"
+"..\..\output\stm32f10x_rcc.o"
+"..\..\output\main.o"
+"..\..\output\bsp.o"
+--library_type=microlib --strict --scatter "..\..\Output\Hex_ZH.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\..\Listing\Hex_ZH.map" -o ..\..\Output\Hex_ZH.axf
